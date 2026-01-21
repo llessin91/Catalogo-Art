@@ -65,6 +65,19 @@ body {
 <h1>📦 Catálogo de Artefatos</h1>
 <div class="catalogo" id="catalogo"></div>
 
+  <script>
+document.getElementById("catalogo").innerHTML = `
+  <div class="card tier-3">
+    <img src="https://i.imgur.com/8Km9tLL.jpg">
+    <h3>TESTE VISUAL</h3>
+    <div class="tier">Tier 3</div>
+    <div class="preco">💰 9999</div>
+    <p><b>➕ Positivos</b><br>Funciona</p>
+    <p><b>➖ Negativos</b><br>Nenhum</p>
+  </div>
+`;
+</script>
+
 <script>
 const SUPABASE_URL = "https://fkvtgxhjfyqsgkrioshl.supabase.co";
 const SUPABASE_KEY = "sb_publishable_dsLAOlB2Cc2EtG6IUZz43w_Qq8xJF4B";
