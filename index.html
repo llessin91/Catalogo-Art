@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>Catálogo de Artefatos</title>
 
-<!-- SUPABASE -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <style>
@@ -39,7 +38,6 @@ body {
   margin:5px 0 10px;
 }
 
-/* TIER CORES */
 .tier-1 { border-color:#777; }
 .tier-1 h3, .tier-1 .tier { color:#bdbdbd; }
 
@@ -68,11 +66,10 @@ body {
 <div class="catalogo" id="catalogo"></div>
 
 <script>
-/* 🔑 SUAS CREDENCIAIS */
 const SUPABASE_URL = "https://fkvtgxhjfyqsgkrioshl.supabase.co";
 const SUPABASE_KEY = "sb_publishable_dsLAOlB2Cc2EtG6IUZz43w_Qq8xJF4B";
 
-/* ⚠️ CRIADO APENAS UMA VEZ */
+/* ⚠️ APENAS UMA DECLARAÇÃO */
 const supabase = window.supabase.createClient(
   SUPABASE_URL,
   SUPABASE_KEY
@@ -84,7 +81,7 @@ async function carregarCatalogo() {
     .select("*");
 
   if (error) {
-    console.error(error);
+    console.error("Erro:", error);
     return;
   }
 
